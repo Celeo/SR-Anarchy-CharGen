@@ -1,27 +1,15 @@
-# sr-anarchy-chargen
+# SR-Anarchy-CharGen
 
-> Character generator for Shadowunr: Anarchy
+This static web app is a tool for creating characters for [Shadowrun: Anarchy](http://www.catalystgamelabs.com/).
 
-## Build Setup
+## Setting up for development
 
-``` bash
-# install dependencies
-npm install
+1. `git clone` the project
+2. Install dependencies with `npm install` or `yarn`
+3. Run in development mdoe with `npm run dev` or `yarn run dev`
 
-# serve with hot reload at localhost:8080
-npm run dev
+Build for production with the **build** package.json target.
 
-# build for production with minification
-npm run build
+Run unit tests with the **unit** package.json target.
 
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Run end to end tests with the **e2e** package.json target.

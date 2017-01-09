@@ -11,7 +11,9 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "clean": "rm -rf dist/*"
+    "clean": "rm -rf dist/*",
+    "predeploy": "yarn run clean && yarn run build",
+    "deploy": "cd dist && surge . sr-anarchy-gen.surge.sh"
   },
   "dependencies": {
     "vue": "^2.1.0",
