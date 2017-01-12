@@ -7,7 +7,7 @@ const allowedAttributePoints = (gameLevel) => {
     case 'prime':
       return 20
     default:
-      return -1
+      return 0
   }
 }
 
@@ -20,7 +20,7 @@ const allowedSkillPoints = (gameLevel) => {
     case 'prime':
       return 14
     default:
-      return -1
+      return 0
   }
 }
 
@@ -33,7 +33,7 @@ const allowedShadowAmps = (gameLevel) => {
     case 'prime':
       return 14
     default:
-      return -1
+      return 0
   }
 }
 
@@ -67,7 +67,7 @@ const allowedItems = (gameLevel) => {
     case 'prime':
       return 5
     default:
-      return -1
+      return 0
   }
 }
 
@@ -80,7 +80,7 @@ const allowedContacts = (gameLevel) => {
     case 'prime':
       return 3
     default:
-      return -1
+      return 0
   }
 }
 

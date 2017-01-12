@@ -1,14 +1,14 @@
 <template lang="pug">
 div
-  h2 Start
-  p
-    | Welcome to an unofficial Shadowrun: Anarchy 
+  p.p-top-slight
+    | Welcome to an unofficial 
+    u Shadowrun: Anarchy 
     em character creator
     | .
   br
   p
     | You can 
-    router-link(to="/new") start a new character 
+    router-link(to="/select-game-level") start a new character 
     | or 
     router-link(to="/continue") continue a previous character
     | .
@@ -23,8 +23,3 @@ div
     a(href="https://github.com/Celeo/SR-Anarchy-CharGen") here
     | .
 </template>
-
-<style lang="stylus" scoped>
-.small
-  font-size 0.8rem
-</style>
