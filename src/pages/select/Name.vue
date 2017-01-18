@@ -16,14 +16,12 @@ div
   div.m-bottom
   div.row
     div.col.s6.input-field
-      input#personal(v-model="personal" type="text")
-      label(for="personal") Real name
+      input(v-model="personal" placeholder="Personal name")
     div.col.s6.input-field
-      input#street(v-model="street" type="text")
-      label(for="street") Street name
+      input(v-model="street" placeholder="Street name")
   div.m-bottom
   div.row
-    a.btn.green(@click="save") Save and continue
+    a.btn.green(@click="save") Save
 </template>
 
 <script>

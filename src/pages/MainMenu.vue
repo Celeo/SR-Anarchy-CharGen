@@ -7,6 +7,8 @@ div
   div.collection
     router-link.collection-item(to="/select/name") Name
     router-link.collection-item(to="/select/tags") Tags
+    router-link.collection-item(to="/select/cues") Cues
+    router-link.collection-item(to="/select/background") Background
     router-link.collection-item(to="/select/metatype") Metatype
     router-link.collection-item(to="/select/awakened-or-emerged") Awakened / Emerged
     router-link.collection-item(to="/select/attributes") Attributes
@@ -17,6 +19,4 @@ div
     router-link.collection-item(to="/select/weapons") Weapons
     router-link.collection-item(to="/select/items") Items
     router-link.collection-item(to="/select/contacts") Contacts
-    router-link.collection-item(to="/select/cues") Cues
-    router-link.collection-item(to="/select/background") Background
 </template>

@@ -18,9 +18,16 @@ const state = {
     itemsPurchased: 0,
     contactsPurchased: 0
   },
-  name: {
-    personal: '',
-    street: ''
+  description: {
+    name: {
+      personal: '',
+      street: ''
+    },
+    tags: []
+  },
+  components: {
+    metatype: '',
+    magic: ''
   }
 }
 
@@ -30,11 +37,23 @@ const mutations = {
   },
 
   setPersonalName(state, name) {
-    state.name.personal = name
+    state.description.name.personal = name
   },
 
   setStreetName(state, name) {
-    state.name.street = name
+    state.description.name.street = name
+  },
+
+  setTags(state, tags) {
+    state.description.tags = tags
+  },
+
+  setMetaType(state, metatype) {
+    state.components.metatype = metatype
+  },
+
+  setMagic(state, magic) {
+    state.components.magic = magic
   }
 }
 
@@ -44,7 +63,19 @@ const getters = {
   },
 
   names(state) {
-    return state.name
+    return state.description.name
+  },
+
+  tags(state) {
+    return state.description.tags
+  },
+
+  metatype(state) {
+    return state.components.metatype
+  },
+
+  magic(state) {
+    return state.components.magic
   },
 
   remainingAttributePoints(state) {
